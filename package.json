@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:tag": "npx playwright test --grep"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Evgeniyinline/lesson-9-API.git"
@@ -17,6 +21,7 @@
   },
   "homepage": "https://github.com/Evgeniyinline/lesson-9-API#readme",
   "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0"
   }
